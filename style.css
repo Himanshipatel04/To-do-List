@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(125deg,#212121,#e30456);
+    padding: 10px;
+}
+
+.to-do-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin:100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.to-do-app{
+    color:indianred;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.to-do-app h2 img{
+    visibility: hidden;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.row{
+    border-radius: 5px;
+    padding: 5px;
+    background: rgba(205, 92, 92, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row input{
+    color: black;
+    font-family: "Alkatra";
+    border-radius: 5px;
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.29);
+}
+
+.row button{
+    padding: 3px;
+    font-family: "Alkatra";
+    cursor: pointer;
+    height: 30px;
+    width: 50px;
+    border: none;
+    background-color:rgba(64, 8, 167, 0.671) ;
+    border-radius: 5px;
+}
+
+ul li{
+  list-style-type:circle;
+  font-size: 15px;
+  height: 40px;
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 30px 12px 10px;
+  /* outline: 1px solid red; */
+  /* text-align: center; */
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    /* background-image: url(unchecked.png); */
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 9px;
+}
+
+.checked{
+    text-decoration: line-through;
+    list-style-type: none;
+    color: #555;
+}
+
+ul li .checked ::before{
+    background-image: url(icon.png);
+} 
+
+ul li span{
+    position: absolute;
+    left: 450px;
+    right: 0;
+    top: 9px;
+    width: 30px;
+    height: 30px;
+    font-size:20px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background:rgba(128, 128, 128, 0.477);
+}
