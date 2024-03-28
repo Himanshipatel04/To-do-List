@@ -1,5 +1,11 @@
 const inputBox = document.getElementById('input-box')
 const listContainer = document.getElementById('list-container')
+const d = document.querySelector('.date')
+const da = new Date();
+
+
+console.log(da);
+d.innerHTML = da.toLocaleDateString()
 
 
 function addTask(){
